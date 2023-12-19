@@ -65,3 +65,12 @@ const CardList = () => {
 
 document.body.style.overflowX = 'hidden';
 export default CardList;
+
+
+
+
+
+
+
+
+
