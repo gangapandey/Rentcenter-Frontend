@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="pb-3">
       <nav class="fixed z-10 w-full bg-white md:absolute md:bg-transparent">
         <div class="container m-auto px-2 md:px-12 lg:px-7">
           <div class="flex flex-wrap items-center justify-between py-3 gap-6 md:py-4 md:gap-0">
@@ -10,7 +10,7 @@ const Navbar = () => {
               <a
                 href="#"
                 aria-label="logo"
-                class="flex space-x-2 items-center ml-9"
+                class="flex space-x-2 items-center "
               >
                 <span class="text-2xl font-bold dark:text-blue-900">
                   RENT<span className="text-red-600">CENTER</span>
