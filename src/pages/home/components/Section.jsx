@@ -3,7 +3,7 @@ import React from 'react'
 const Section = () => {
   return (
     <div>
-       <section class="bg-white m-4">
+       <section class="bg-white m-4 pt-16">
         <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6 ">
             <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                 <h2 class="mb-4 text-3xl font-extrabold text-blue-900 dark:text-blue  pb-9">Share your gadgets, earn extra cash</h2>

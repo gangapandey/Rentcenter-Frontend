@@ -4,6 +4,7 @@ import Hero from "./components/Hero"
 import Homecards from "./components/Homecards"
 import Productshow from "./components/Productshow"
 import Section from "./components/Section"
+import Team from "./components/Team"
 
 const products = [
     {
@@ -28,7 +29,9 @@ export default function Home() {
 
         <Productshow />
 
-        <Section /> 
+        <Section />
+
+        <Team /> 
         </>
     )
 }

@@ -25,7 +25,7 @@ const Card = ({ imageSrc, title, rating, price }) => {
   };
 
   return (
-    <div className="mb-4 ml-9 flex-shrink-0">
+    <div className="mb-4  p-5 flex-shrink-0">
       <div className="max-w-xs mx-auto bg-white shadow-md rounded-lg overflow-hidden">
         <img src={imageSrc} alt={title} className="w-full h-32 object-cover" />
         <div className="p-4">
