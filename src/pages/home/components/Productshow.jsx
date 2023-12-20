@@ -81,7 +81,7 @@ const ProductContainer = () => {
   ];
 
   return (
-    <div className="bg-gray-50 p-10 mt-16">
+    <div className="bg-gray-50 p-10 mt-16 ">
       <div className="flex flex-wrap justify-center">
         {products.map((product) => (
           <Card key={product.id} {...product} />

@@ -8,7 +8,7 @@ import { GiWashingMachine } from "react-icons/gi";
 const Homecards = ({ title, description }) => {
   return (
     <div className="ml-10">
-      <div className="relative flex w-56 h-30 justify-center items-center flex-col rounded-md bg-white bg-clip-border text-gray-700 shadow">
+      <div className="relative flex w-56 h-30 justify-center items-center flex-col rounded-md bg-white bg-clip-border text-gray-700 shadow hover:border-gray-200 dark:hover:border-gray-200 hover:outline-none hover:ring hover:ring-opacity-20 hover:ring-gray-200">
       <div className="p-6">
         <h5 className="mb-2 block font-sans text-xl items-center justify-center ml-7  leading-snug tracking-normal text-blue-gray-900 antialiased">
           {title}
@@ -55,7 +55,7 @@ const CardList = () => {
   ];
 
   return (
-    <div className="flex space-x-4">
+    <div className="flex space-x-4 ">
       {cardData.map((card, index) => (
         <Homecards key={index} {...card} />
       ))}
