@@ -1,5 +1,6 @@
 import Signupform from "../../global/component/forms/Signupform"
 import Navbar from "../../global/component/navbar/Navbar"
+import Category from "./components/Category"
 import Hero from "./components/Hero"
 import Homecards from "./components/Homecards"
 import Productshow from "./components/Productshow"
@@ -30,6 +31,10 @@ export default function Home() {
         <Productshow />
 
         <Section />
+
+        <Category />
+
+   
 
         <Team /> 
         </>
