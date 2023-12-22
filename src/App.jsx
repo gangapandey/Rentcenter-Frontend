@@ -9,6 +9,7 @@ import store from './store/store'
 import Home from './pages/home/Home'
 import Signupform from './global/component/forms/Signupform'
 import Cart from './pages/cart/Cart'
+import Register from './pages/auth/register/Register'
 function App() {
   
 
@@ -25,6 +26,7 @@ function App() {
 
         <Route path='/' element={<Home />} />
         <Route path='/loginn' element={<Signupform />} />
+        <Route path='/register' element={<Register />} />
         <Route path='/cart' element={<Cart />} />
       </Routes>
       <Footer />

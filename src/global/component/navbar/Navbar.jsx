@@ -21,7 +21,10 @@ console.log(products);
             <div className="w-full px-6 flex justify-between lg:w-max md:px-0">
               <a
                 href="#"
-                aria-label="logo"
+                aria-label="logo" onClick={() => {
+                  
+                  navigate("/");
+                }}
                 className="flex space-x-2 items-center "
               >
                 <span className="text-2xl font-bold dark:text-blue-900">
@@ -52,7 +55,10 @@ console.log(products);
                 <ul className="space-y-6 tracking-wide font-medium text-sm md:flex md:space-y-0">
                   <li>
                     <a
-                      href="#"
+                      href="#" onClick={() => {
+                  
+                        navigate("/");
+                      }}
                       className="block md:px-4 transition hover:text-blue-700 text-blue-800"
                     >
                       <span>Home</span>
@@ -91,7 +97,7 @@ console.log(products);
                     className="block md:px-4 transition hover:text-blue-700"
                   >
                     <span>
-                      Cart <sup className="text-red-500">{item.length}</sup>
+                      Cart <sup className="text-red-500">{products.length}</sup>
                     </span>
                   </a>
                 </ul>
@@ -103,7 +109,10 @@ console.log(products);
                   title="Start buying"
                   className="w-full py-3 px-6 text-center rounded-full transition active:bg-blue-200 focus:bg-blue-100 sm:w-max"
                 >
-                  <a href={Signupform}>
+                  <a href="#" onClick={() => {
+                      
+                      navigate("/register");
+                    }}>
                     <span className="block text-gray-700 font-semibold text-sm">
                       Sign up
                     </span>
@@ -114,9 +123,15 @@ console.log(products);
                   title="Start buying"
                   className="w-full py-3 px-6 text-center rounded-full transition bg-blue-300 hover:bg-blue-100 active:bg-blue-400 focus:bg-blue-300 sm:w-max"
                 >
+                  <a href="#"  onClick={() => {
+                      
+                      navigate("/loginn");
+                    }}>
+                  
                   <span className="block text-gray-800 font-semibold text-sm">
                     Login
                   </span>
+                  </a>
                 </button>
               </div>
             </div>

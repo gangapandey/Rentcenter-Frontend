@@ -29,7 +29,7 @@ const Card = ({ id, imageSrc, title, rating, price, addToCart }) => {
   const dispatch = useDispatch()
 
   const addToCartt = ({ id, title, price }) => {
-    dispatch(add({id,title, price }))
+    dispatch(add({id,title, price, imageSrc }))
   }
 
   return (
@@ -43,7 +43,7 @@ const Card = ({ id, imageSrc, title, rating, price, addToCart }) => {
           <div className="flex items-center justify-between mt-1">
             <p className="text-gray-700">${price}</p>
             <button
-              onClick={() => addToCartt({ id, title, price })}
+              onClick={() => addToCartt({ id, title, price, imageSrc })}
               className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
             >
               Add to Cart
