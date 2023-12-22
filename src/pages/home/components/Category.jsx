@@ -62,7 +62,7 @@ const Category = () => {
   ];
 
   return (
-    <div className="bg-gray-300 p-16 relative">
+    <div className="bg-gray-200 p-16 relative">
       <div className="text-center p-3">
         <h2 className="text-2xl font-bold">Categories</h2>
         <p className="text-gray-600 p-4">
