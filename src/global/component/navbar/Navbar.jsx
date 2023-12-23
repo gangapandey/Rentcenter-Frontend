@@ -115,10 +115,7 @@ console.log(products);
                   title="Start buying"
                   className="w-full py-3 px-6 text-center rounded-full transition active:bg-blue-200 focus:bg-blue-100 sm:w-max"
                 >
-                  <a href="#" onClick={() => {
-                      
-                      navigate("/register");
-                    }}>
+                  <a href="#" onClick={() => navigate("/register")}>
                     <span className="block text-gray-700 font-semibold text-sm">
                       Register
                     </span>
@@ -129,10 +126,7 @@ console.log(products);
                   title="Start buying"
                   className="w-full py-3 px-6 text-center rounded-full transition bg-blue-300 hover:bg-blue-100 active:bg-blue-400 focus:bg-blue-300 sm:w-max"
                 >
-                  <a href="#"  onClick={() => {
-                      
-                      navigate("/loginn");
-                    }}>
+                  <a href="#"  onClick={() => navigate("/loginn")}>
                   
                   <span className="block text-gray-800 font-semibold text-sm">
                     Login

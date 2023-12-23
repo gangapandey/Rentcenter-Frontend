@@ -1,9 +1,7 @@
 import React from "react";
-import "./Cart.css";
 import { useDispatch, useSelector } from "react-redux";
 import { remove } from "../../store/cartSlice";
-import { Navbar } from "@material-tailwind/react";
-import Footer from "../../global/component/footer/Footer";
+
 
 const Cart = () => {
   const products = useSelector((state) => state.cart);
@@ -15,9 +13,10 @@ const Cart = () => {
   };
   
   return (
-    <div className="m-0 p-0" >
+    <div >
       
-      
+      <div className="max-w-full h-full w-full m-auto py-20 px-4 relative group ">
+
       <div className="h-screen bg-gray-100  pt-20">
         <h1 className="mb-10 text-center text-2xl font-bold">Cart Items</h1>
         <div className="mx-auto max-w-5xl justify-center px-6 md:flex md:space-x-6 xl:px-0">
@@ -104,7 +103,9 @@ const Cart = () => {
           </div>
         </div>
       </div>
-
+      
+      </div>
+      
       
     </div>
   );

@@ -1,76 +1,91 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
+
+
 export default function Signupform() {
+  const navigate = useNavigate()
   return (
     <>
-      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
-        <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-         
-          <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-            Log in
-          </h2>
-        </div>
+      <div className="max-w-full h-full w-full m-auto py-20 px-4 relative group ">
+        <div class="container mx-auto">
+          <div class="flex justify-center px-6 my-12">
+            <div class="w-full xl:w-3/4 lg:w-11/12 flex">
+              <div
+                class="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg -mt-32"
+                style={{ backgroundImage: "url('https://i.pinimg.com/564x/be/3a/80/be3a8013a434d988bde32aa8e8a5c3e2.jpg')" }}
+              ></div>
 
-        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form className="space-y-6" action="#" method="POST">
-            <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Email address
-              </label>
-              <div className="mt-2">
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  autoComplete="email"
-                  required
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
+              <div class="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-l-none">
+                <h3 class="pt-4 text-2xl text-center">Welcome Back!</h3>
+                <form class="px-8 pt-6 pb-8 mb-4 bg-white rounded">
+                  <div class="mb-4">
+                    <label
+                      class="block mb-2 text-sm font-bold text-gray-700"
+                      for="username"
+                    >
+                      Username
+                    </label>
+                    <input
+                      class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                      id="username"
+                      type="text"
+                      placeholder="Username"
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <label
+                      class="block mb-2 text-sm font-bold text-gray-700"
+                      for="password"
+                    >
+                      Password
+                    </label>
+                    <input
+                      class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border border-gray-500 rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                      id="password"
+                      type="password"
+                      placeholder="******************"
+                    />
+                    
+                  </div>
+                  <div class="mb-4">
+                    <input
+                      class="mr-2 leading-tight"
+                      type="checkbox"
+                      id="checkbox_id"
+                    />
+                    <label class="text-sm" for="checkbox_id">
+                      Remember Me
+                    </label>
+                  </div>
+                  <div class="mb-6 text-center">
+                    <button
+                      class="w-full px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+                      type="button"
+                    >
+                      Log In
+                    </button>
+                  </div>
+                  <hr class="mb-6 border-t" />
+                  <div class="text-center">
+                    <a
+                      class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
+                      href="#" onClick={() => navigate("/register") }
+                    >
+                      Create an Account!
+                    </a>
+                  </div>
+                  <div class="text-center">
+                    <a
+                      class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
+                      href="#"
+                    >
+                      Forgot Password?
+                    </a>
+                  </div>
+                </form>
               </div>
             </div>
-
-            <div>
-              <div className="flex items-center justify-between">
-                <label
-                  htmlFor="password"
-                  className="block text-sm font-medium leading-6 text-gray-900"
-                >
-                  Password
-                </label>
-                
-              </div>
-              <div className="mt-2">
-                <input
-                  id="password"
-                  name="password"
-                  type="password"
-                  autoComplete="current-password"
-                  required
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-
-            <div>
-              <button
-                type="submit"
-                className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Sign in
-              </button>
-            </div>
-          </form>
-
-          <p className="mt-10 text-center text-sm text-gray-500">
-            Forgot Password?{" "}
-            <a
-              href="#"
-              className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
-            >
-              Create a new password
-            </a>
-          </p>
+          </div>
         </div>
       </div>
     </>

@@ -10,6 +10,7 @@ import Cart from "./pages/cart/Cart";
 import Register from "./pages/auth/register/Register";
 import Hostvechicle from "./pages/hostvechicle/Hostvechicle";
 import Hostelectronic from "./pages/hostelectronic/Hostelectronic";
+import Registeruser from "./global/component/forms/Registeruser";
 function App() {
   return (
     <>
@@ -24,7 +25,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/loginn" element={<Signupform />} />
-            <Route path="/register" element={<Register />} />
+            <Route path="/register" element={<Registeruser />} />
+            
             <Route path="/cart" element={<Cart />} />
             <Route path="/hostvechicle" element={<Hostvechicle />} />
             <Route path="/hostelectronic" element={<Hostelectronic />} />
