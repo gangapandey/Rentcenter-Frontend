@@ -1,14 +1,22 @@
 import React from "react";
 import "./Cart.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { remove } from "../../store/cartSlice";
 import { Navbar } from "@material-tailwind/react";
+import Footer from "../../global/component/footer/Footer";
 
 const Cart = () => {
   const products = useSelector((state) => state.cart);
-  console.log(products);
 
+  const dispatch = useDispatch()
+
+  const removeItem = (productId) => {
+    dispatch(remove(productId))
+  };
+  
   return (
-    <div >
+    <div className="m-0 p-0" >
+      
       
       <div className="h-screen bg-gray-100  pt-20">
         <h1 className="mb-10 text-center text-2xl font-bold">Cart Items</h1>
@@ -48,13 +56,15 @@ const Cart = () => {
                       </div>
                       <div class="flex items-center space-x-4">
                         <p class="text-sm">{product.price}</p>
-                        <svg
+                        
+                        
+                        <svg onClick={() => removeItem(product._id)}
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke-width="1.5"
                           stroke="currentColor"
-                          class="h-5 w-5 cursor-pointer duration-150 hover:text-red-500"
+                          class="h-5 w-5 cursor-pointer text-red-700 duration-150  hover:text-red-500"
                         >
                           <path
                             stroke-linecap="round"
@@ -62,6 +72,7 @@ const Cart = () => {
                             d="M6 18L18 6M6 6l12 12"
                           />
                         </svg>
+                        
                       </div>
                     </div>
                   </div>
@@ -69,6 +80,7 @@ const Cart = () => {
               );
             })}
           </div>
+
           <div classNameName="mt-6 h-full rounded-lg border bg-white p-6 shadow-md md:mt-0 md:w-1/3">
             <div className="mb-2 flex justify-between">
               <p className="text-gray-700">Subtotal</p>
@@ -92,6 +104,8 @@ const Cart = () => {
           </div>
         </div>
       </div>
+
+      
     </div>
   );
 };

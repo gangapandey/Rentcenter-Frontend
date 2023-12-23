@@ -74,7 +74,10 @@ console.log(products);
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="#" onClick={() => {
+                      
+                        navigate("/hostvechicle");
+                      }}
                       className="block md:px-4 transition hover:text-blue-700"
                     >
                       <span>Host Vechicle</span>
@@ -114,7 +117,7 @@ console.log(products);
                       navigate("/register");
                     }}>
                     <span className="block text-gray-700 font-semibold text-sm">
-                      Sign up
+                      Register
                     </span>
                   </a>
                 </button>

@@ -39,14 +39,14 @@ const Card = ({ id, imageSrc, title, rating, price, addToCart }) => {
         <div className="p-4">
           <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
           <div className="flex items-center mt-2">{renderStars()}</div>
-          <p className="text-xs text-gray-400 mt-2 mb-0.5">Rent per day</p>
+          <p className="text-xs text-gray-400 mt-2 mb-0.5">Rent</p>
           <div className="flex items-center justify-between mt-1">
             <p className="text-gray-700">${price}</p>
             <button
               onClick={() => addToCartt({ id, title, price, imageSrc })}
               className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
             >
-              Rent Now
+              Add to Cart
             </button>
           </div>
         </div>

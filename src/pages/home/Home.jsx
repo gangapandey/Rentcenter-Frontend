@@ -1,3 +1,4 @@
+import Footer from "../../global/component/footer/Footer"
 import Signupform from "../../global/component/forms/Signupform"
 import Navbar from "../../global/component/navbar/Navbar"
 import Category from "./components/Category"
@@ -24,6 +25,7 @@ export default function Home() {
     return (
         <>
 
+        
         <Hero />
 
         <Homecards />
@@ -37,6 +39,8 @@ export default function Home() {
    
 
         <Team /> 
+
+        
         </>
     )
 }
