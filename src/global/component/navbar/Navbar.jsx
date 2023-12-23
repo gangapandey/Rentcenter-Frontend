@@ -85,7 +85,10 @@ console.log(products);
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="#" onClick={() => {
+                      
+                        navigate("/hostelectronic");
+                      }}
                       className="block md:px-4 transition hover:text-blue-700"
                     >
                       <span>Host Electronic</span>

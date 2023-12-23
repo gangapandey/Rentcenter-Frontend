@@ -1,12 +1,12 @@
+import React from 'react'
 
-import React from "react";
-
-const Hostvechicle = () => {
+const Hostelectronic = () => {
   return (
-    <>
-      <div className="max-w-full h-full w-full m-auto py-20 px-4 relative group ">
+    <div>
+        <div className="max-w-full h-full w-full m-auto py-20 px-4 relative group ">
+
         <p className=" flex justify-center items-center font-bold text-2xl text-black-500 py-7">
-          Host your vechicle{" "}
+          Host your Electronics{" "}
         </p>
 
         <div class="flex items-center justify-center p-12">
@@ -27,6 +27,7 @@ const Hostvechicle = () => {
                       type="text"
                       name="fName"
                       id="fName"
+                      required
                       placeholder="First Name"
                       class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                     />
@@ -44,6 +45,7 @@ const Hostvechicle = () => {
                     </label>
                     <input
                       type="text"
+                      required
                       name="lName"
                       id="lName"
                       placeholder="Last Name"
@@ -53,19 +55,20 @@ const Hostvechicle = () => {
                 </div>
               </div>
 
-              {/* registration number */}
+              {/* model number */}
               <div class="mb-5">
                 <label
                   for="registrationNumber"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
-                  Registration Number
+                  Model Number
                 </label>
                 <input
                   type="text"
+                  required
                   name="registrationNumber"
                   id="registrationNumber"
-                  placeholder="Enter registration number of vechicle"
+                  placeholder="Enter model number "
                   class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                 />
               </div>
@@ -80,28 +83,34 @@ const Hostvechicle = () => {
                 </label>
                 <select
                   name="guest"
+                  required
                   id="guest"
                   class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                 >
-                  <option value="0">BMW</option>
-                  <option value="1">BYD</option>
-                  <option value="2">Ford</option>
-                  <option value="3">Honda</option>
-                  <option value="4">Yamaha</option>
-                  <option value="5">Hyundai</option>
-                  <option value="6">Suzuki</option>
-                  <option value="7">Tata</option>
-                  <option value="8">Tyota</option>
+                  <option value="0">Apple</option>
+                  <option value="1">Xiaomi</option>
+                  <option value="2">Samsung</option>
+                  <option value="3">One plus</option>
+                  <option value="4">Huawei</option>
+                  <option value="5">Dell</option>
+                  <option value="6">HP</option>
+                  <option value="7">Lenovo</option>
+                  <option value="8">Asus</option>
+                  <option value="9">Canon</option>
+                  <option value="10">Nikon</option>
+                  <option value="11">Panasonic</option>
+                  <option value="12">L.G.</option>
+                  <option value="13">Sony</option>
                 </select>
               </div>
 
-              {/* seats */}
-              <div class="mb-5">
+              {/* Gadegets no */}
+              {/* <div class="mb-5">
                 <label
                   for="guest"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
-                  Number of seats
+                  Number of
                 </label>
                 <input
                   type="number"
@@ -111,10 +120,10 @@ const Hostvechicle = () => {
                   min="0"
                   class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                 />
-              </div>
+              </div> */}
 
               {/* fuel type */}
-              <div class="mb-5">
+              {/* <div class="mb-5">
                 <label
                   for="guest"
                   class="mb-3 block text-base font-medium text-[#07074D]"
@@ -131,18 +140,19 @@ const Hostvechicle = () => {
                   <option value="2">Electric</option>
                   <option value="3">Hybrid</option>
                 </select>
-              </div>
+              </div> */}
 
               {/* color */}
               <div class="mb-5">
                 <label
-                  for="registrationNumber"
+                  for="color"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
                   Color
                 </label>
                 <input
                   type="text"
+                  required
                   name="registrationNumber"
                   id="registrationNumber"
                   placeholder="Color of vechicle"
@@ -153,13 +163,14 @@ const Hostvechicle = () => {
               {/* city */}
               <div class="mb-5">
                 <label
-                  for="registrationNumber"
+                  for="city"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
                   City
                 </label>
                 <input
                   type="text"
+                  required
                   name="registrationNumber"
                   id="registrationNumber"
                   placeholder="Butwal"
@@ -170,13 +181,14 @@ const Hostvechicle = () => {
               {/* place */}
               <div class="mb-5">
                 <label
-                  for="registrationNumber"
+                  for="place"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
                   Place
                 </label>
                 <input
                   type="text"
+                  required
                   name="registrationNumber"
                   id="registrationNumber"
                   placeholder="Golpark-04,  sangam path"
@@ -187,13 +199,14 @@ const Hostvechicle = () => {
               {/* price */}
               <div class="mb-5">
                 <label
-                  for="registrationNumber"
+                  for="price"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
                   Price per day
                 </label>
                 <input
                   type="number"
+                  required
                   name="registrationNumber"
                   id="registrationNumber"
                   placeholder="1000"
@@ -204,15 +217,15 @@ const Hostvechicle = () => {
               {/* instruc */}
               <div class="mb-5">
                 <label
-                  for="registrationNumber"
+                  for="instruction"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
                   Instructions
                 </label>
                 <input
                   type="text"
-                  name="registrationNumber"
-                  id="registrationNumber"
+                  name="instruction"
+                  id="instruction"
                   placeholder="Your instruction before renting"
                   class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                 />
@@ -221,27 +234,47 @@ const Hostvechicle = () => {
               {/* guideliness */}
               <div class="mb-5">
                 <label
-                  for="registrationNumber"
+                  for="guidelines"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
                   Guidelines
                 </label>
                 <input
                   type="text"
-                  name="registrationNumber"
-                  id="registrationNumber"
+                  required
+                  name="guidelines"
+                  id="guidelines"
                   placeholder="Guideline"
                   class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                 />
               </div>
 
-              {/* vechicle image */}
+              {/* Gadget image */}
               <div class="mb-5">
                 <label
                   for="image"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
-                  Vechicle Image (Minimum size: 2 MB)
+                  Gadget Image (Minimum size: 2 MB)
+                </label>
+                <input
+                  type="file"
+                  name="image"
+                
+                  id="image"
+                  accept="image/*"
+                  required
+                  class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                />
+              </div>
+
+              {/* BIll img */}
+              <div class="mb-5">
+                <label
+                  for="image"
+                  class="mb-3 block text-base font-medium text-[#07074D]"
+                >
+                 Owning Bill Image (Minimum size: 2 MB)
                 </label>
                 <input
                   type="file"
@@ -253,41 +286,7 @@ const Hostvechicle = () => {
                 />
               </div>
 
-              {/* bluebook img */}
-              <div class="mb-5">
-                <label
-                  for="image"
-                  class="mb-3 block text-base font-medium text-[#07074D]"
-                >
-                 Bluebook Image (Minimum size: 2 MB)
-                </label>
-                <input
-                  type="file"
-                  name="image"
-                  id="image"
-                  accept="image/*"
-                  required
-                  class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                />
-              </div>
-
-              {/* insurance image */}
-              <div class="mb-5">
-                <label
-                  for="image"
-                  class="mb-3 block text-base font-medium text-[#07074D]"
-                >
-                  Insurance Image (Minimum size: 2 MB)
-                </label>
-                <input
-                  type="file"
-                  name="image"
-                  id="image"
-                  accept="image/*"
-                  required
-                  class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                />
-              </div>
+    
               {/* available date and time */}
               <div class="-mx-3 flex flex-wrap">
                 <div class="w-full px-3 sm:w-1/2">
@@ -369,10 +368,11 @@ const Hostvechicle = () => {
             </form>
           </div>
         </div>
-        
-      </div>
-    </>
-  );
-};
 
-export default Hostvechicle;
+        </div>
+      
+    </div>
+  )
+}
+
+export default Hostelectronic

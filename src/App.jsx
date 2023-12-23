@@ -9,6 +9,7 @@ import Signupform from "./global/component/forms/Signupform";
 import Cart from "./pages/cart/Cart";
 import Register from "./pages/auth/register/Register";
 import Hostvechicle from "./pages/hostvechicle/Hostvechicle";
+import Hostelectronic from "./pages/hostelectronic/Hostelectronic";
 function App() {
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/hostvechicle" element={<Hostvechicle />} />
+            <Route path="/hostelectronic" element={<Hostelectronic />} />
           </Routes>
           <Footer />
         </BrowserRouter>
