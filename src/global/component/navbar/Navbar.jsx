@@ -66,7 +66,7 @@ console.log(products);
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="#" onClick={() => navigate("/product")}
                       className="block md:px-4 transition hover:text-blue-700"
                     >
                       <span>Products</span>

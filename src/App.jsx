@@ -7,10 +7,11 @@ import store from "./store/store";
 import Home from "./pages/home/Home";
 import Signupform from "./global/component/forms/Signupform";
 import Cart from "./pages/cart/Cart";
-import Register from "./pages/auth/register/Register";
 import Hostvechicle from "./pages/hostvechicle/Hostvechicle";
 import Hostelectronic from "./pages/hostelectronic/Hostelectronic";
 import Registeruser from "./global/component/forms/Registeruser";
+import Product from "./pages/product/Product";
+
 function App() {
   return (
     <>
@@ -26,7 +27,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/loginn" element={<Signupform />} />
             <Route path="/register" element={<Registeruser />} />
-            
+            <Route path="/product" element={<Product />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/hostvechicle" element={<Hostvechicle />} />
             <Route path="/hostelectronic" element={<Hostelectronic />} />
