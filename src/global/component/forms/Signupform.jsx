@@ -12,7 +12,7 @@ export default function Signupform() {
             <div class="w-full xl:w-3/4 lg:w-11/12 flex">
               <div
                 class="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg -mt-32"
-                style={{ backgroundImage: "url('https://i.pinimg.com/564x/be/3a/80/be3a8013a434d988bde32aa8e8a5c3e2.jpg')" }}
+                style={{ backgroundImage: "#" }}
               ></div>
 
               <div class="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-l-none">

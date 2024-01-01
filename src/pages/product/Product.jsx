@@ -51,49 +51,50 @@ const Product = () => {
 
      
       const sortOptions = [
-        { name: 'Most Popular', href: '#', current: true },
-        { name: 'Best Rating', href: '#', current: false },
-        { name: 'Newest', href: '#', current: false },
-        { name: 'Price: Low to High', href: '#', current: false },
+        { name: 'Most Popular', href: '#', current: false},
+        { name: 'Price: Low to High', href: '#', current: true },
         { name: 'Price: High to Low', href: '#', current: false },
       ]
     
       const filters = [
-        {
-          id: 'color',
-          name: 'Color',
-          options: [
-            { value: 'white', label: 'White', checked: false },
-            { value: 'beige', label: 'Beige', checked: false },
-            { value: 'blue', label: 'Blue', checked: true },
-            { value: 'brown', label: 'Brown', checked: false },
-            { value: 'green', label: 'Green', checked: false },
-            { value: 'purple', label: 'Purple', checked: false },
-          ],
-        },
+        
         {
           id: 'category',
           name: 'Category',
           options: [
-            { value: 'new-arrivals', label: 'New Arrivals', checked: false },
-            { value: 'sale', label: 'Sale', checked: false },
-            { value: 'travel', label: 'Travel', checked: true },
-            { value: 'organization', label: 'Organization', checked: false },
-            { value: 'accessories', label: 'Accessories', checked: false },
+            { value: 'Cars', label: 'Cars', checked: false },
+            { value: 'Bike', label: 'Bike', checked: false },
+            { value: 'Laptops', label: 'Laptops', checked: true },
+            { value: 'Mobile', label: 'Mobile', checked: false },
+            { value: 'Camera', label: 'Camera', checked: false },
           ],
         },
         {
-          id: 'size',
-          name: 'Size',
-          options: [
-            { value: '2l', label: '2L', checked: false },
-            { value: '6l', label: '6L', checked: false },
-            { value: '12l', label: '12L', checked: false },
-            { value: '18l', label: '18L', checked: false },
-            { value: '20l', label: '20L', checked: false },
-            { value: '40l', label: '40L', checked: true },
-          ],
-        },
+            id: 'Brand',
+            name: 'Brand',
+            options: [
+              { value: 'Apple', label: 'Apple', checked: true },
+              { value: 'Samsung', label: 'Samsung', checked: false },
+              { value: 'Vivo', label: 'Vivo', checked: false },
+              { value: 'Canon', label: 'Canon', checked: false },
+              { value: 'Mercedes', label: 'Mercedes', checked: false },
+              { value: 'Suzuki', label: 'Suzuki', checked: false },
+              { value: 'Honda', label: 'Honda', checked: false },
+              { value: 'Yamaha', label: 'Yamaha', checked: false },
+            ],
+          },
+        {
+            id: 'color',
+            name: 'Color',
+            options: [
+              { value: 'White', label: 'White', checked: false },
+              { value: 'Red', label: 'Red', checked: false },
+              { value: 'Black', label: 'Black', checked: true },
+              { value: 'Blue', label: 'Blue', checked: false },
+              
+            ],
+          },
+        
       ]
     
       const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
@@ -105,6 +106,7 @@ const Product = () => {
         {/* Mobile filter dialog */}
         <Transition.Root show={mobileFiltersOpen} as={Fragment}>
           <Dialog as="div" className="relative z-40 lg:hidden" onClose={setMobileFiltersOpen}>
+
             <Transition.Child
               as={Fragment}
               enter="transition-opacity ease-linear duration-300"
@@ -189,6 +191,7 @@ const Product = () => {
                     ))}
                   </form>
                 </Dialog.Panel>
+
               </Transition.Child>
             </div>
           </Dialog>
@@ -196,7 +199,7 @@ const Product = () => {
 
         <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
-            <h1 className="text-4xl font-semibold tracking-tight text-gray-900">New Arrivals</h1>
+            <h1 className="text-2xl font-semibold tracking-tight text-red-600">Products Available on Rent</h1>
 
             <div className="flex items-center">
               <Menu as="div" className="relative inline-block text-left">
@@ -285,6 +288,7 @@ const Product = () => {
                             </span>
                           </Disclosure.Button>
                         </h3>
+
                         <Disclosure.Panel className="pt-6">
                           <div className="space-y-4">
                             {section.options.map((option, optionIdx) => (

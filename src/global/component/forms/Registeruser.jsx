@@ -13,7 +13,7 @@ const Registeruser = () => {
                 className="w-full h-auto bg-gray-400 hidden lg:block lg:w-5/12 bg-cover rounded-l-lg"
                 style={{
                   backgroundImage:
-                    "url('https://i.pinimg.com/564x/fe/86/f6/fe86f661ea9aa27c6e1ecd7c5ac6b5b2.jpg')",
+                    "#",
                 }}
                 alt="Background Image"
               ></div>
