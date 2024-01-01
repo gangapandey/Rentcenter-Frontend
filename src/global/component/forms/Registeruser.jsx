@@ -5,18 +5,11 @@ const Registeruser = () => {
     const navigate = useNavigate()
   return (
     <div>
-      <div className="max-w-full h-full w-full m-auto py-20 px-4 relative group ">
+      <div className="max-w-full h-full w-full m-auto py-5 px-5 ml-44 relative group ">
         <div className="container mx-auto">
-          <div className="flex justify-center px-6 my-12">
+          <div className="flex justify-center items-center px-6 my-12">
             <div className="w-full xl:w-3/4 lg:w-11/12 flex">
-              <div
-                className="w-full h-auto bg-gray-400 hidden lg:block lg:w-5/12 bg-cover rounded-l-lg"
-                style={{
-                  backgroundImage:
-                    "#",
-                }}
-                alt="Background Image"
-              ></div>
+              
 
               <div className="w-full lg:w-7/12 bg-white p-5 rounded-lg lg:rounded-l-none">
                 <h3 className="pt-4 text-2xl text-center">
@@ -80,14 +73,12 @@ const Registeruser = () => {
                         Password
                       </label>
                       <input
-                        class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border border-red-500 rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                        class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                         id="password"
                         type="password"
                         placeholder="******************"
                       />
-                      <p class="text-xs italic text-red-500">
-                        Please choose a password.
-                      </p>
+                      
                     </div>
                     <div class="md:ml-2">
                       <label
