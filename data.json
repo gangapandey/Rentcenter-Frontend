@@ -336,7 +336,7 @@
       "rating": 4.42,
       "stock": 54,
       "brand": "Suzuki",
-      "category": "Car",
+      "category": "Cars",
       "thumbnail": "https://i.dummyjson.com/data/products/19/thumbnail.jpg",
       "images": [
         "https://i.dummyjson.com/data/products/19/1.jpg",
@@ -354,7 +354,7 @@
       "rating": 4.06,
       "stock": 140,
       "brand": "Suzuki",
-      "category": "Car",
+      "category": "Cars",
       "thumbnail": "https://i.dummyjson.com/data/products/20/thumbnail.jpg",
       "images": [
         "https://i.dummyjson.com/data/products/20/1.jpg",
@@ -373,7 +373,7 @@
       "rating": 4.44,
       "stock": 133,
       "brand": "Toyata",
-      "category": "Car",
+      "category": "Cars",
       "thumbnail": "https://i.dummyjson.com/data/products/21/thumbnail.png",
       "images": [
         "https://i.dummyjson.com/data/products/21/1.png",
@@ -390,7 +390,7 @@
       "rating": 4.57,
       "stock": 146,
       "brand": "Toyata",
-      "category": "Car",
+      "category": "Cars",
       "thumbnail": "https://i.dummyjson.com/data/products/22/thumbnail.jpg",
       "images": [
         "https://i.dummyjson.com/data/products/22/1.jpg",
@@ -407,7 +407,7 @@
       "rating": 4.85,
       "stock": 26,
       "brand": "Mercedes",
-      "category": "Car",
+      "category": "Cars",
       "thumbnail": "https://i.dummyjson.com/data/products/23/thumbnail.jpg",
       "images": [
         "https://i.dummyjson.com/data/products/23/1.jpg",
@@ -426,7 +426,7 @@
       "rating": 4.94,
       "stock": 113,
       "brand": "Mercedes",
-      "category": "Car",
+      "category": "Cars",
       "thumbnail": "https://i.dummyjson.com/data/products/24/thumbnail.jpg",
       "images": [
         "https://i.dummyjson.com/data/products/24/1.jpg",
