@@ -12,6 +12,9 @@ import Hostelectronic from "./pages/hostelectronic/Hostelectronic";
 
 import Product from "./pages/product/Product";
 import Registerform from "./global/component/forms/Registerform";
+import ForgetPassword from "./global/component/forms/forgetPassword";
+import VerifyOtp from "./global/component/forms/verifyOtp";
+import ResestPassword from "./global/component/forms/ResetPassword";
 
 function App() {
   return (
@@ -26,8 +29,11 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/loginn" element={<Signupform />} />
             <Route path="/register" element={<Registerform />} />
+            <Route path="/loginn" element={<Signupform />} />
+            <Route path="/forgetPassword" element={<ForgetPassword />} />
+            <Route path="/verifyOtp" element={<VerifyOtp />} />
+            <Route path="/resetPassword" element={<ResestPassword />} />
             <Route path="/product" element={<Product />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/hostvechicle" element={<Hostvechicle />} />
