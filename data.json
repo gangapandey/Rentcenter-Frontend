@@ -550,5 +550,106 @@
         "https://i.dummyjson.com/data/products/30/thumbnail.jpg"
       ]
     }
+  ],
+
+  "brands" : [
+    {
+      "value": "Apple",
+      "label": "Apple",
+      "checked": false
+    },
+    {
+      "value": "Samsung",
+      "label": "Samsung",
+      "checked": false
+    },
+    {
+      "value": "Vivo",
+      "label": "Vivo",
+      "checked": false
+    },
+    {
+      "value": "Canon",
+      "label": "Canon",
+      "checked": false
+    },
+    {
+      "value": "Nikon",
+      "label": "Nikon",
+      "checked": false
+    },
+    {
+      "value": "Sony",
+      "label": "Sony",
+      "checked": false
+    },
+    {
+      "value": "Macbook",
+      "label": "Macbook",
+      "checked": false
+    },
+    {
+      "value": "HP",
+      "label": "HP",
+      "checked": false
+    },
+    {
+      "value": "Dell",
+      "label": "Dell",
+      "checked": false
+    },
+    {
+      "value": "Hyundai",
+      "label": "Hyundai",
+      "checked": false
+    },
+    {
+      "value": "Suzuki",
+      "label": "Suzuki",
+      "checked": false
+    },
+    {
+      "value": "Tyota",
+      "label": "Tyota",
+      "checked": false
+    },
+    {
+      "value": "Honda",
+      "label": "Honda",
+      "checked": false
+    },
+    {
+      "value": "Yamaha",
+      "label": "Yamaha",
+      "checked": false
+    }
+  ],
+
+  "category" : [
+    {
+      "value": "Laptops",
+      "label": "Laptops",
+      "checked": false
+    },
+    {
+      "value": "Mobile",
+      "label": "Mobile",
+      "checked": false
+    },
+    {
+      "value": "Camera",
+      "label": "Camera",
+      "checked": false
+    },
+    {
+      "value": "Cars",
+      "label": "Cars",
+      "checked": false
+    },
+    {
+      "value": "Bike",
+      "label": "Bike",
+      "checked": false
+    }
   ]
 }
