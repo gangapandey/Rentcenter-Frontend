@@ -9,19 +9,15 @@ const initialValues = {
   manufacturer: "",
   color: "",
   city: "",
-  seat: "",
-  fuel: "",
   place: "",
   price: "",
   instruction: "",
   guideline: "",
   date: "",
   time: "",
-  vimage: "",
-  bimage: "",
-  inimage: "",
-  insurancedate: "",
-};
+  gadgetimage: "",
+  billmage: ""
+}
 
 const Hostelectronic = () => {
 
@@ -36,9 +32,9 @@ const Hostelectronic = () => {
   } = useFormik({
     initialValues: initialValues,
     validationSchema: electronicSchema,
-    vimage : [],
-    bimage : [],
-    inimage : [],
+    gadgetimage : [],
+    billmage : [],
+    
     onSubmit: (values, action) => {
       console.log("🚀 ~ Hostvechicle ~ values:", values);
       action.resetForm();
@@ -62,7 +58,7 @@ const Hostelectronic = () => {
 
         <div class="flex items-center justify-center p-12">
           <div class="mx-auto w-full max-w-[550px]">
-            <form action="" method="POST">
+            <form action="" method="POST" onSubmit={handleSubmit}>
               <div class="-mx-3 flex flex-wrap">
 
                 {/* firstname */}
@@ -176,120 +172,102 @@ const Hostelectronic = () => {
                 ) : null}
               </div>
 
-              {/* Gadegets no */}
-              {/* <div class="mb-5">
-                <label
-                  for="guest"
-                  class="mb-3 block text-base font-medium text-[#07074D]"
-                >
-                  Number of
-                </label>
-                <input
-                  type="number"
-                  name="guest"
-                  id="guest"
-                  placeholder="5"
-                  min="0"
-                  class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                />
-              </div> */}
-
-              {/* fuel type */}
-              {/* <div class="mb-5">
-                <label
-                  for="guest"
-                  class="mb-3 block text-base font-medium text-[#07074D]"
-                >
-                  Fuel Type
-                </label>
-                <select
-                  name="guest"
-                  id="guest"
-                  class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                >
-                  <option value="0">Petrol</option>
-                  <option value="1">Disel</option>
-                  <option value="2">Electric</option>
-                  <option value="3">Hybrid</option>
-                </select>
-              </div> */}
-
               {/* color */}
               <div class="mb-5">
                 <label
-                  for="color"
+                  for="registrationNumber"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
                   Color
                 </label>
                 <input
                   type="text"
-                  required
-                  name="registrationNumber"
-                  id="registrationNumber"
+                  name="color"
+                  id="color"
+                  value={values.color}
+                  onBlur={handleBlur}
+                  onChange={handleChange}
                   placeholder="Color of vechicle"
                   class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                />
+                />{" "}
+                {errors.color && touched.color ? (
+                  <p className="text-red-700 p-3">{errors.color}</p>
+                ) : null}
               </div>
 
               {/* city */}
               <div class="mb-5">
                 <label
-                  for="city"
+                  for="registrationNumber"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
                   City
                 </label>
                 <input
                   type="text"
-                  required
-                  name="registrationNumber"
-                  id="registrationNumber"
+                  name="city"
+                  id="city"
+                  value={values.city}
+                  onBlur={handleBlur}
+                  onChange={handleChange}
                   placeholder="Butwal"
                   class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                />
+                />{" "}
+                {errors.city && touched.city ? (
+                  <p className="text-red-700 p-3">{errors.city}</p>
+                ) : null}
               </div>
 
               {/* place */}
               <div class="mb-5">
                 <label
-                  for="place"
+                  for="registrationNumber"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
                   Place
                 </label>
                 <input
                   type="text"
-                  required
-                  name="registrationNumber"
-                  id="registrationNumber"
+                  name="place"
+                  id="place"
+                  value={values.place}
+                  onBlur={handleBlur}
+                  onChange={handleChange}
                   placeholder="Golpark-04,  sangam path"
                   class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                />
+                />{" "}
+                {errors.place && touched.place ? (
+                  <p className="text-red-700 p-3">{errors.place}</p>
+                ) : null}
               </div>
 
               {/* price */}
               <div class="mb-5">
                 <label
-                  for="price"
+                  for="registrationNumber"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
                   Price per day
                 </label>
                 <input
                   type="number"
-                  required
-                  name="registrationNumber"
-                  id="registrationNumber"
+                  name="price"
+                  id="price"
+                  value={values.price}
+                  onBlur={handleBlur}
+                  onChange={handleChange}
                   placeholder="1000"
                   class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                />
+                />{" "}
+                {errors.price && touched.price ? (
+                  <p className="text-red-700 p-3">{errors.price}</p>
+                ) : null}
               </div>
 
-              {/* instruc */}
-              <div class="mb-5">
+               {/* instruc */}
+               <div class="mb-5">
                 <label
-                  for="instruction"
+                  for="registrationNumber"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
                   Instructions
@@ -298,27 +276,38 @@ const Hostelectronic = () => {
                   type="text"
                   name="instruction"
                   id="instruction"
+                  value={values.instruction}
+                  onBlur={handleBlur}
+                  onChange={handleChange}
                   placeholder="Your instruction before renting"
                   class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                />
+                />{" "}
+                {errors.instruction && touched.instruction ? (
+                  <p className="text-red-700 p-3">{errors.instruction}</p>
+                ) : null}
               </div>
 
               {/* guideliness */}
               <div class="mb-5">
                 <label
-                  for="guidelines"
+                  for="registrationNumber"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
                   Guidelines
                 </label>
                 <input
                   type="text"
-                  required
-                  name="guidelines"
-                  id="guidelines"
+                  name="guideline"
+                  id="guideline"
+                  value={values.guideline}
+                  onBlur={handleBlur}
+                  onChange={handleChange}
                   placeholder="Guideline"
                   class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                />
+                />{" "}
+                {errors.guideline && touched.guideline ? (
+                  <p className="text-red-700 p-3">{errors.guideline}</p>
+                ) : null}
               </div>
 
               {/* Gadget image */}
@@ -332,12 +321,14 @@ const Hostelectronic = () => {
                 <input
                   type="file"
                   name="image"
-                
+                  multiple
                   id="image"
                   accept="image/*"
-                  required
+                  onChange={(event) => handleFileChange(event, "gadgetimage")}
                   class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                />
+                /> {errors.gadgetimage && touched.gadgetimage ? (
+                  <p className="text-red-700 p-3">{errors.gadgetimage}</p>
+                ) : null}
               </div>
 
               {/* BIll img */}
@@ -353,14 +344,16 @@ const Hostelectronic = () => {
                   name="image"
                   id="image"
                   accept="image/*"
-                  required
+                  onChange={(event) => handleFileChange(event, "billimage")}
                   class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                />
+                /> {errors.billmage && touched.billmage ? (
+                  <p className="text-red-700 p-3">{errors.billmage}</p>
+                ) : null}
               </div>
 
     
-              {/* available date and time */}
-              <div class="-mx-3 flex flex-wrap">
+             {/* available date and time */}
+             <div class="-mx-3 flex flex-wrap">
                 <div class="w-full px-3 sm:w-1/2">
                   <div class="mb-5">
                     <label
@@ -373,8 +366,14 @@ const Hostelectronic = () => {
                       type="date"
                       name="date"
                       id="date"
+                      value={values.date}
+                      onBlur={handleBlur}
+                      onChange={handleChange}
                       class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                    />
+                    />{" "}
+                    {errors.date && touched.date ? (
+                      <p className="text-red-700 p-3">{errors.date}</p>
+                    ) : null}
                   </div>
                 </div>
                 <div class="w-full px-3 sm:w-1/2">
@@ -383,14 +382,20 @@ const Hostelectronic = () => {
                       for="time"
                       class="mb-3 block text-base font-medium text-[#07074D]"
                     >
-                       Available Time
+                      Available Time
                     </label>
                     <input
                       type="time"
                       name="time"
                       id="time"
+                      value={values.time}
+                      onBlur={handleBlur}
+                      onChange={handleChange}
                       class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                    />
+                    />{" "}
+                    {errors.time && touched.time ? (
+                      <p className="text-red-700 p-3">{errors.time}</p>
+                    ) : null}
                   </div>
                 </div>
               </div>
