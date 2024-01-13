@@ -15,7 +15,7 @@ export const vechicleSchema = Yup.object({
     guideline: Yup.string().required("Please enter your guideline"),
 
     // need to work on image validation here
-    vimage: Yup.mixed().required("Please upload 2 vechicle image"),
+    vimage: Yup.mixed().required("Please upload vechicle image"),
     bimage: Yup.mixed().required("Please upload Bluebook image"),
     inimage: Yup.mixed().required("Please upload Insurance image"),
 
@@ -38,7 +38,7 @@ export const electronicSchema = Yup.object({
 
     // need to work on image validation here
     gadgetimage: Yup.mixed().required("Please upload a gadget image"),
-    billmage: Yup.mixed().required("Please upload a Bill image"),
+    billimage: Yup.mixed().required("Please upload a Bill image"),
     
     date: Yup.date().required('Please enter a valid date'),
     time: Yup.string().required('Please enter a valid time') 

@@ -10,7 +10,7 @@
       "stock": 94,
       "brand": "Apple",
       "category": "Mobile",
-      "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+      "thumbnail": "https://mymobilesnews.com/wp-content/uploads/2021/11/Apple_iPhone-9-788x788.jpg",
       "images": [
         "https://i.dummyjson.com/data/products/1/1.jpg",
         "https://i.dummyjson.com/data/products/1/2.jpg",
@@ -29,7 +29,7 @@
       "stock": 34,
       "brand": "Apple",
       "category": "Mobile",
-      "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+      "thumbnail": "https://phoneaqua.com/assets/images/products/Apple-Iphone-x-Price.webp",
       "images": [
         "https://i.dummyjson.com/data/products/2/1.jpg",
         "https://i.dummyjson.com/data/products/2/2.jpg",
@@ -47,7 +47,7 @@
       "stock": 36,
       "brand": "Vivo",
       "category": "Mobile",
-      "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+      "thumbnail": "https://hukut.com/_next/image?url=https%3A%2F%2Fcdn.hukut.com%2Fvivo-y17s.webp&w=1920&q=75",
       "images": ["https://i.dummyjson.com/data/products/3/1.jpg"]
     },
     {
@@ -60,7 +60,7 @@
       "stock": 123,
       "brand": "Vivo",
       "category": "Mobile",
-      "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+      "thumbnail": "https://hukut.com/_next/image?url=https%3A%2F%2Fcdn.hukut.com%2FVivo%2520Y35%2520Smartphone.webp&w=1920&q=75",
       "images": [
         "https://i.dummyjson.com/data/products/4/1.jpg",
         "https://i.dummyjson.com/data/products/4/2.jpg",
@@ -79,7 +79,7 @@
       "stock": 32,
       "brand": "Samsung",
       "category": "Mobile",
-      "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+      "thumbnail": "https://hukut.com/_next/image?url=https%3A%2F%2Fcdn.hukut.com%2FSamsung-Galaxy-M04-Shadow-Blue.webp&w=1920&q=75",
       "images": [
         "https://i.dummyjson.com/data/products/5/1.jpg",
         "https://i.dummyjson.com/data/products/5/2.jpg",
@@ -96,7 +96,7 @@
       "stock": 83,
       "brand": "Samsung",
       "category": "Mobile",
-      "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+      "thumbnail": "https://hukut.com/_next/image?url=https%3A%2F%2Fcdn.hukut.com%2FSamsung%2520Galaxy%2520M14%25205G%2520Silver1.webp&w=1920&q=75",
       "images": [
         "https://i.dummyjson.com/data/products/6/1.png",
         "https://i.dummyjson.com/data/products/6/2.jpg",
@@ -114,7 +114,7 @@
       "stock": 50,
       "brand": "HP",
       "category": "Laptops",
-      "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+      "thumbnail": "https://hukut.com/_next/image?url=https%3A%2F%2Fcdn.hukut.com%2Flayer_1.webp&w=1920&q=75",
       "images": [
         "https://i.dummyjson.com/data/products/7/1.jpg",
         "https://i.dummyjson.com/data/products/7/2.jpg",
@@ -132,7 +132,7 @@
       "stock": 68,
       "brand": "HP",
       "category": "Laptops",
-      "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+      "thumbnail": "https://hukut.com/_next/image?url=https%3A%2F%2Fcdn.hukut.com%2FHP%2520Pavilion%2520x360%252014-DW1010(2).webp&w=1920&q=75",
       "images": [
         "https://i.dummyjson.com/data/products/8/1.jpg",
         "https://i.dummyjson.com/data/products/8/2.jpg",
@@ -151,7 +151,7 @@
       "stock": 96,
       "brand": "Dell",
       "category": "Laptops",
-      "thumbnail": "https://i.dummyjson.com/data/products/9/thumbnail.jpg",
+      "thumbnail": "https://hukut.com/_next/image?url=https%3A%2F%2Fcdn.hukut.com%2FDell%2520Inspiron%252015%25203511.webp&w=1920&q=75",
       "images": [
         "https://i.dummyjson.com/data/products/9/1.jpg",
         "https://i.dummyjson.com/data/products/9/2.png",
@@ -170,7 +170,7 @@
       "stock": 89,
       "brand": "Dell",
       "category": "Laptops",
-      "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
+      "thumbnail": "https://hukut.com/_next/image?url=https%3A%2F%2Fcdn.hukut.com%2FDell%2520Inspiron%25205515%2520Ryzen%25205.webp&w=1920&q=75",
       "images": [
         "https://i.dummyjson.com/data/products/10/1.jpg",
         "https://i.dummyjson.com/data/products/10/2.jpg",
@@ -188,7 +188,7 @@
       "stock": 65,
       "brand": "Macbook",
       "category": "Laptops",
-      "thumbnail": "https://i.dummyjson.com/data/products/11/thumbnail.jpg",
+      "thumbnail": "https://hukut.com/_next/image?url=https%3A%2F%2Fcdn.hukut.com%2FMacbook%2520Pro%252013%2520inch%2520M1%2520(late%25202020).webp&w=1920&q=75",
       "images": [
         "https://i.dummyjson.com/data/products/11/1.jpg",
         "https://i.dummyjson.com/data/products/11/2.jpg",
@@ -206,7 +206,7 @@
       "stock": 52,
       "brand": "Macbook",
       "category": "Laptops",
-      "thumbnail": "https://i.dummyjson.com/data/products/12/thumbnail.jpg",
+      "thumbnail": "https://hukut.com/_next/image?url=https%3A%2F%2Fcdn.hukut.com%2Fmacbook-pro-m2-price-nepal.webp&w=1920&q=75",
       "images": [
         "https://i.dummyjson.com/data/products/12/1.jpg",
         "https://i.dummyjson.com/data/products/12/2.jpg",
@@ -225,7 +225,7 @@
       "stock": 61,
       "brand": "Canon",
       "category": "Camera",
-      "thumbnail": "https://i.dummyjson.com/data/products/13/thumbnail.webp",
+      "thumbnail": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2024/01/12/4175ca40-c7a0-489e-964f-3260eeab1401.webp?x-image-process=image/resize,m_lfit,h_500,w_500",
       "images": [
         "https://i.dummyjson.com/data/products/13/1.jpg",
         "https://i.dummyjson.com/data/products/13/2.png",
@@ -244,7 +244,7 @@
       "stock": 114,
       "brand": "Canon",
       "category": "Camera",
-      "thumbnail": "https://i.dummyjson.com/data/products/14/thumbnail.jpg",
+      "thumbnail": "https://choicemandu.com/image/cache/catalog/products/gharko-store/Canon-270x270.jpg",
       "images": [
         "https://i.dummyjson.com/data/products/14/1.jpg",
         "https://i.dummyjson.com/data/products/14/2.jpg",
@@ -262,7 +262,7 @@
       "stock": 105,
       "brand": "Nikon",
       "category": "Camera",
-      "thumbnail": "https://i.dummyjson.com/data/products/15/thumbnail.jpg",
+      "thumbnail": "https://choicemandu.com/image/cache/catalog/products/gharko-store/D5600-270x270.jpg",
       "images": [
         "https://i.dummyjson.com/data/products/15/1.jpg",
         "https://i.dummyjson.com/data/products/15/2.jpg",
@@ -281,7 +281,7 @@
       "stock": 110,
       "brand": "Nikon",
       "category": "Camera",
-      "thumbnail": "https://i.dummyjson.com/data/products/16/thumbnail.jpg",
+      "thumbnail": "https://choicemandu.com/image/cache/catalog/picture/15c-270x270.jpg",
       "images": [
         "https://i.dummyjson.com/data/products/16/1.png",
         "https://i.dummyjson.com/data/products/16/2.webp",
@@ -300,7 +300,7 @@
       "stock": 78,
       "brand": "Sony",
       "category": "Camera",
-      "thumbnail": "https://i.dummyjson.com/data/products/17/thumbnail.jpg",
+      "thumbnail": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2024/01/10/d7d91da4-b940-8272-a737-0d1bb8a2186b.webp?x-image-process=image/resize,m_lfit,h_500,w_500",
       "images": [
         "https://i.dummyjson.com/data/products/17/1.jpg",
         "https://i.dummyjson.com/data/products/17/2.jpg",
@@ -318,7 +318,7 @@
       "stock": 88,
       "brand": "Sony",
       "category": "Camera",
-      "thumbnail": "https://i.dummyjson.com/data/products/18/thumbnail.jpg",
+      "thumbnail": "https://hamrobazaar.blr1.cdn.digitaloceanspaces.com/User/Posts/2024/01/10/681bbf58-31fe-7298-d05a-0c3cfe813ef4.webp?x-image-process=image/resize,m_lfit,h_500,w_500",
       "images": [
         "https://i.dummyjson.com/data/products/18/1.jpg",
         "https://i.dummyjson.com/data/products/18/2.jpg",
@@ -337,7 +337,7 @@
       "stock": 54,
       "brand": "Suzuki",
       "category": "Cars",
-      "thumbnail": "https://i.dummyjson.com/data/products/19/thumbnail.jpg",
+      "thumbnail": "https://suzuki.com.np/uploads/rotating_image/18427f4258341972162feccae69628db.png",
       "images": [
         "https://i.dummyjson.com/data/products/19/1.jpg",
         "https://i.dummyjson.com/data/products/19/2.jpg",
@@ -355,7 +355,7 @@
       "stock": 140,
       "brand": "Suzuki",
       "category": "Cars",
-      "thumbnail": "https://i.dummyjson.com/data/products/20/thumbnail.jpg",
+      "thumbnail": "https://media.umbraco.io/suzuki-gb/rnblvqje/swift-sport_front34v2.jpg?width=1840&format=webp",
       "images": [
         "https://i.dummyjson.com/data/products/20/1.jpg",
         "https://i.dummyjson.com/data/products/20/2.jpg",
@@ -374,7 +374,7 @@
       "stock": 133,
       "brand": "Toyata",
       "category": "Cars",
-      "thumbnail": "https://i.dummyjson.com/data/products/21/thumbnail.png",
+      "thumbnail": "https://media.zigcdn.com/media/model/2023/Feb/legender_360x240.jpg",
       "images": [
         "https://i.dummyjson.com/data/products/21/1.png",
         "https://i.dummyjson.com/data/products/21/2.jpg",
@@ -391,7 +391,7 @@
       "stock": 146,
       "brand": "Toyata",
       "category": "Cars",
-      "thumbnail": "https://i.dummyjson.com/data/products/22/thumbnail.jpg",
+      "thumbnail": "https://media.zigcdn.com/media/model/2023/Mar/toyota-camry-1_360x240.jpg",
       "images": [
         "https://i.dummyjson.com/data/products/22/1.jpg",
         "https://i.dummyjson.com/data/products/22/2.jpg",
@@ -408,7 +408,7 @@
       "stock": 26,
       "brand": "Mercedes",
       "category": "Cars",
-      "thumbnail": "https://i.dummyjson.com/data/products/23/thumbnail.jpg",
+      "thumbnail": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Mercedes-Benz/EQS/8423/1691645568687/front-left-side-47.jpg?tr=w-664",
       "images": [
         "https://i.dummyjson.com/data/products/23/1.jpg",
         "https://i.dummyjson.com/data/products/23/2.jpg",
@@ -427,7 +427,7 @@
       "stock": 113,
       "brand": "Mercedes",
       "category": "Cars",
-      "thumbnail": "https://i.dummyjson.com/data/products/24/thumbnail.jpg",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMbj0Ix28BHgNOoJ8CW-z_4q37XhNL05hT1nOtpQPrv62rtQgbIQI0ewJ2MLiIFEhz6WQ&usqp=CAU",
       "images": [
         "https://i.dummyjson.com/data/products/24/1.jpg",
         "https://i.dummyjson.com/data/products/24/2.jpg",
@@ -446,7 +446,7 @@
       "stock": 47,
       "brand": "Yamaha",
       "category": "Bike",
-      "thumbnail": "https://i.dummyjson.com/data/products/25/thumbnail.jpg",
+      "thumbnail": "https://imgd.aeplcdn.com/664x374/n/cw/ec/115871/mt-15-right-front-three-quarter-6.png?isig=0&q=80",
       "images": [
         "https://i.dummyjson.com/data/products/25/1.png",
         "https://i.dummyjson.com/data/products/25/2.jpg",
@@ -465,7 +465,7 @@
       "stock": 131,
       "brand": "Yamaha",
       "category": "Bike",
-      "thumbnail": "https://i.dummyjson.com/data/products/26/thumbnail.jpg",
+      "thumbnail": "https://imgd.aeplcdn.com/664x374/n/cw/ec/97549/apache-rtr-160-4v-right-front-three-quarter-5.png?isig=0&q=80",
       "images": [
         "https://i.dummyjson.com/data/products/26/1.jpg",
         "https://i.dummyjson.com/data/products/26/2.jpg",
@@ -485,7 +485,7 @@
       "stock": 17,
       "brand": "Honda",
       "category": "Bike",
-      "thumbnail": "https://i.dummyjson.com/data/products/27/thumbnail.webp",
+      "thumbnail": "https://imgd.aeplcdn.com/664x374/n/cw/ec/1/versions/honda-hness-cb350-2023-dlx1678450812796.jpg?q=80",
       "images": [
         "https://i.dummyjson.com/data/products/27/1.jpg",
         "https://i.dummyjson.com/data/products/27/2.jpg",
@@ -504,7 +504,7 @@
       "stock": 54,
       "brand": "Honda",
       "category": "Bike",
-      "thumbnail": "https://i.dummyjson.com/data/products/28/thumbnail.jpg",
+      "thumbnail": "https://imgd.aeplcdn.com/310x174/n/cw/ec/49446/sport-right-front-three-quarter-12.jpeg?isig=0&q=80",
       "images": [
         "https://i.dummyjson.com/data/products/28/1.jpg",
         "https://i.dummyjson.com/data/products/28/2.jpg",
@@ -523,7 +523,7 @@
       "stock": 7,
       "brand": "Hero",
       "category": "Bike",
-      "thumbnail": "https://i.dummyjson.com/data/products/29/thumbnail.webp",
+      "thumbnail": "https://imgd.aeplcdn.com/664x374/n/cw/ec/105184/xpulse-200-4v-right-front-three-quarter-2.jpeg?isig=0&q=80",
       "images": [
         "https://i.dummyjson.com/data/products/29/1.jpg",
         "https://i.dummyjson.com/data/products/29/2.jpg",
@@ -542,7 +542,7 @@
       "stock": 54,
       "brand": "Hero",
       "category": "Bike",
-      "thumbnail": "https://i.dummyjson.com/data/products/30/thumbnail.jpg",
+      "thumbnail": "https://imgd.aeplcdn.com/664x374/n/cw/ec/15109/splendor-plus-right-front-three-quarter-3.jpeg?isig=0&q=80",
       "images": [
         "https://i.dummyjson.com/data/products/30/1.jpg",
         "https://i.dummyjson.com/data/products/30/2.jpg",
@@ -625,7 +625,7 @@
     }
   ],
 
-  "category" : [
+  "categories" : [
     {
       "value": "Laptops",
       "label": "Laptops",

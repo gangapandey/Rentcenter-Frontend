@@ -25,7 +25,7 @@ console.log(products);
                   
                   navigate("/");
                 }}
-                className="flex space-x-2 items-center "
+                className="flex  space-x-2 items-center "
               >
                 <span className="text-2xl font-bold dark:text-blue-900">
                   RENT<span className="text-red-600">CENTER</span>

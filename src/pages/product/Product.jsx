@@ -13,8 +13,14 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import {
   fetchAllProductsAsync,
+  fetchBrandsAsync,
+  fetchCategoriesAsync,
   fetchProductsByFiltersAsync,
+  
   selectAllProducts,
+  selectBrands,
+  selectCategories,
+  
 } from "./productSlice";
 
 const Product = () => {
@@ -29,54 +35,45 @@ const Product = () => {
     },
   ];
 
-  const filters = [
-    {
-      id: "category",
-      name: "Category",
-      options: [
-        { value: "Laptops", label: "Laptops", checked: false },
-        { value: "Mobile", label: "Mobile", checked: false },
-        { value: "Camera", label: "Camera", checked: false },
-        { value: "Cars", label: "Cars", checked: false },
-        { value: "Bike", label: "Bike", checked: false },
-      ],
-    },
-    {
-      id: "Brand",
-      name: "Brand",
-      options: [
-        { value: "Apple", label: "Apple", checked: false },
-        { value: "Samsung", label: "Samsung", checked: false },
-        { value: "Vivo", label: "Vivo", checked: false },
-        { value: "Canon", label: "Canon", checked: false },
-        { value: "Nikon", label: "Nikon", checked: false },
-        { value: "Sony", label: "Sony", checked: false },
-        { value: "Macbook", label: "Macbook", checked: false },
-        { value: "HP", label: "HP", checked: false },
-        { value: "Dell", label: "Dell", checked: false },
-        { value: "Hyundai", label: "Hyundai", checked: false },
-        { value: "Suzuki", label: "Suzuki", checked: false },
-        { value: "Tyota", label: "Tyota", checked: false },
-        { value: "Honda", label: "Honda", checked: false },
-        { value: "Yamaha", label: "Yamaha", checked: false },
-      ],
-    },
-  ];
-
+  
   const dispatch = useDispatch();
+
 
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
+
   const products = useSelector(selectAllProducts);
+  const brands = useSelector(selectBrands);
+  const categories = useSelector(selectCategories);
+  const filters = [
+    {
+      id: "category",
+      name: "category",
+      options: categories,
+    },
+    {
+      id: "Brand",
+      name: "brand",
+      options: brands,
+    },
+  ];
+
 
   const [filter, setFilter] = useState({});
   const [sort, setSort] = useState({});
 
+  //rating calcurations
+
+
   // handle filtering
+ 
+    
+  
   const handleFilter = (e, section, option) => {
     console.log(e.target.checked);
     const newFilter = { ...filter };
     //TODO : on server support multiple category
+    
     if (e.target.checked) {
       if (newFilter[section.id]) {
         newFilter[section.id].push(option.value);
@@ -93,6 +90,8 @@ const Product = () => {
 
     setFilter(newFilter);
   };
+
+
   // handle sorting
   const handleSort = (e, option) => {
     const sort = { _sort: option.sort, _order: option.order };
@@ -100,9 +99,22 @@ const Product = () => {
     setSort(sort);
   };
 
+
   useEffect(() => {
     dispatch(fetchProductsByFiltersAsync({ filter, sort }));
   }, [dispatch, filter, sort]);
+
+
+  useEffect(() => {
+    dispatch(fetchCategoriesAsync())
+    dispatch(fetchBrandsAsync())
+  }, [dispatch]);
+
+  useEffect(() => {
+    dispatch(fetchBrandsAsync());
+  }, [dispatch]);
+  
+
 
   return (
     <div>
@@ -110,6 +122,7 @@ const Product = () => {
         <div className="bg-white">
           <div>
             {/* Mobile filter dialog */}
+            
             <Transition.Root show={mobileFiltersOpen} as={Fragment}>
               <Dialog
                 as="div"

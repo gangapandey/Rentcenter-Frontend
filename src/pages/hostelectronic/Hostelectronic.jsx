@@ -33,7 +33,7 @@ const Hostelectronic = () => {
     initialValues: initialValues,
     validationSchema: electronicSchema,
     gadgetimage : [],
-    billmage : [],
+    billimage : [],
     
     onSubmit: (values, action) => {
       console.log("🚀 ~ Hostvechicle ~ values:", values);
@@ -316,19 +316,20 @@ const Hostelectronic = () => {
                   for="image"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
-                  Gadget Image (Minimum size: 2 MB)
+                  Gadget Image <span className="text-gray-600">(in pdf format)</span>
                 </label>
                 <input
                   type="file"
                   name="image"
                   multiple
                   id="image"
-                  accept="image/*"
+                  accept=".pdf*"
                   onChange={(event) => handleFileChange(event, "gadgetimage")}
-                  class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                  class="w-full appearance-none rounded-md mb-3 border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                 /> {errors.gadgetimage && touched.gadgetimage ? (
                   <p className="text-red-700 p-3">{errors.gadgetimage}</p>
                 ) : null}
+                
               </div>
 
               {/* BIll img */}
@@ -337,7 +338,7 @@ const Hostelectronic = () => {
                   for="image"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
-                 Owning Bill Image (Minimum size: 2 MB)
+                 Owning Bill Image 
                 </label>
                 <input
                   type="file"
@@ -346,8 +347,8 @@ const Hostelectronic = () => {
                   accept="image/*"
                   onChange={(event) => handleFileChange(event, "billimage")}
                   class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                /> {errors.billmage && touched.billmage ? (
-                  <p className="text-red-700 p-3">{errors.billmage}</p>
+                /> {errors.billimage && touched.billimage ? (
+                  <p className="text-red-700 p-3">{errors.billimage}</p>
                 ) : null}
               </div>
 

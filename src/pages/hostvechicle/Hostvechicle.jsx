@@ -363,16 +363,16 @@ const Hostvechicle = () => {
                   htmlFor="vimage"
                   className="mb-3 block text-base font-medium text-[#07074D]"
                 >
-                  Vehicle Image
+                  Vehicle Image <span className="text-gray-600">(in pdf format)</span>
                 </label>
                 <input
                   type="file"
                   name="vimage"
                   id="vimage"
                   multiple
-                  accept="image/*"
+                  accept=".pdf"
                   onChange={(event) => handleFileChange(event, "vimage")}
-                  className="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                  className="w-full appearance-none rounded-md border mb-3 border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                 />
                 {errors.vimage && touched.vimage ? (
                   <p className="text-red-700 p-3">{errors.vimage}</p>
@@ -385,13 +385,13 @@ const Hostvechicle = () => {
                   for="image"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
-                  Bluebook Image
+                  Bluebook Image <span className="text-gray-600">(in pdf format)</span>
                 </label>
                 <input
                   type="file"
                   name="bimage"
                   id="bimage"
-                  accept="image/*"
+                  accept=".pdf*"
                   multiple
                   onChange={(event) => handleFileChange(event, "bimage")}
                   class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
@@ -407,13 +407,13 @@ const Hostvechicle = () => {
                   for="image"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
-                  Insurance Image
+                  Insurance Image <span className="text-gray-600">(in pdf format)</span>
                 </label>
                 <input
                   type="file"
                   name="inimage"
                   id="inimage"
-                  accept="image/*"
+                  accept=".pdf"
                   multiple
                   onChange={(event) => handleFileChange(event, "inimage")}
                   class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
