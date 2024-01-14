@@ -13,9 +13,10 @@ export function fetchProductsByFilters(filter, sort){
     let queryString = '';
     for( let key in filter){
         const categoryValues = filter[key];
+    
         if(categoryValues.length){
-        //     const lastCategoryValues = categoryValues[categoryValues.length-1]
-        // queryString += `${key}=${lastCategoryValues}&`
+        // //     const lastCategoryValues = categoryValues[categoryValues.length-1]
+        // // queryString += `${key}=${lastCategoryValues}&`
         const lastCategoryValues = categoryValues[categoryValues.length-1]
         queryString += `${key}=${lastCategoryValues}&`
         } 

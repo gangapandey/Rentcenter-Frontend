@@ -12,11 +12,9 @@ import {
 } from "@heroicons/react/20/solid";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  fetchAllProductsAsync,
   fetchBrandsAsync,
   fetchCategoriesAsync,
   fetchProductsByFiltersAsync,
-  
   selectAllProducts,
   selectBrands,
   selectCategories,
@@ -24,6 +22,7 @@ import {
 } from "./productSlice";
 
 const Product = () => {
+
   const sortOptions = [
     { name: "Best Rating", sort: "price", order: "desc", current: true },
     { name: "Price: Low to High", sort: "price", order: "asc", current: false },
@@ -35,7 +34,6 @@ const Product = () => {
     },
   ];
 
-  
   const dispatch = useDispatch();
 
 
@@ -52,7 +50,7 @@ const Product = () => {
       options: categories,
     },
     {
-      id: "Brand",
+      id: "brand",
       name: "brand",
       options: brands,
     },
@@ -212,6 +210,7 @@ const Product = () => {
                                             defaultValue={option.value}
                                             type="checkbox"
                                             defaultChecked={option.checked}
+                                            onChange={e=> handleFilter(e, section, option)}
                                             className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                                           />
                                           <label
