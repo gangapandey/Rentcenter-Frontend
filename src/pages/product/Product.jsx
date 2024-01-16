@@ -20,6 +20,7 @@ import {
   selectCategories,
   
 } from "./productSlice";
+import { Link } from "react-router-dom";
 
 const Product = () => {
 
@@ -43,6 +44,7 @@ const Product = () => {
   const products = useSelector(selectAllProducts);
   const brands = useSelector(selectBrands);
   const categories = useSelector(selectCategories);
+
   const filters = [
     {
       id: "category",
@@ -64,9 +66,6 @@ const Product = () => {
 
 
   // handle filtering
- 
-    
-  
   const handleFilter = (e, section, option) => {
     console.log(e.target.checked);
     const newFilter = { ...filter };
@@ -390,6 +389,7 @@ const Product = () => {
                       <div className="mx-auto max-w-2xl px-4  py-0 sm:px-6 sm:py-0 lg:max-w-7xl lg:px-8">
                         <div className=" grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
                           {products.map((product) => (
+                            <Link to="/productdetail">
                             <div
                               key={product.id}
                               className="group relative border-solid border-2 p-2 border-gray-200"
@@ -436,6 +436,7 @@ const Product = () => {
                                 </p>
                               </div>
                             </div>
+                            </Link>
                           ))}
                         </div>
                       </div>

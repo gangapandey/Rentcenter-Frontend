@@ -15,6 +15,7 @@ import Registerform from "./global/component/forms/Registerform";
 import ForgetPassword from "./global/component/forms/forgetPassword";
 import VerifyOtp from "./global/component/forms/verifyOtp";
 import ResestPassword from "./global/component/forms/ResetPassword";
+import ProductDetail from "./pages/product/ProductDetail";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/hostvechicle" element={<Hostvechicle />} />
             <Route path="/hostelectronic" element={<Hostelectronic />} />
+            <Route path="/productdetail" element={<ProductDetail />} />
           </Routes>
           <Footer />
         </BrowserRouter>
