@@ -8,8 +8,9 @@ const Cart = () => {
 
   const dispatch = useDispatch()
 
-  const removeItem = (productId) => {
-    dispatch(remove(productId))
+  const removeItem = (product) => {
+    console.log("removing item with id: ", product.id)
+    dispatch(remove(product))
   };
   
   return (
@@ -22,6 +23,7 @@ const Cart = () => {
         <div className="mx-auto max-w-5xl justify-center px-6 md:flex md:space-x-6 xl:px-0">
           <div className="rounded-lg md:w-2/3">
             {products.map((product) => {
+              console.log("products:", product)
               return (
                 <div key={product._id} class="justify-between mb-6 rounded-lg bg-white p-6 shadow-md sm:flex sm:justify-start">
                   <img
@@ -57,7 +59,8 @@ const Cart = () => {
                         <p class="text-sm">{product.price}</p>
                         
                         
-                        <svg onClick={() => removeItem(product._id)}
+                        <svg onClick={() => 
+                        {console.log("Product ID:", product._id); removeItem(product);}}
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"

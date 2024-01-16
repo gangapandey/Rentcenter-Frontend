@@ -1,7 +1,7 @@
 import React from "react";
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { useDispatch } from "react-redux";
-import { add } from "../../../store/cartSlice";
+import { add, remove } from "../../../store/cartSlice";
 
 const Card = ({ id, imageSrc, title, rating, price, addToCart }) => {
   const renderStars = () => {
@@ -60,6 +60,7 @@ const ProductContainer = () => {
     // Implement your addToCart logic here, e.g., update a shopping cart state
     console.log("Added to cart:", product);
   };
+
 
   const products = [
     {
