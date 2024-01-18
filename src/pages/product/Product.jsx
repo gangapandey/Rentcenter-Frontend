@@ -415,6 +415,16 @@ const Product = () => {
                                     </a>
                                   </h3>
 
+                                  <div >
+                                    <a href="#">
+                                      <span
+                                        aria-hidden="true"
+                                        className="absolute inset-0"
+                                      />
+                                      <span className="text-sm font-semibold text-gray-700">Status:</span> {product.status}
+                                    </a>
+                                  </div>
+
                                   <p className="mt-1 text-sm text-gray-500">
                                     <svg
                                       xmlns="http://www.w3.org/2000/svg"
@@ -434,7 +444,7 @@ const Product = () => {
                                   </p>
                                 </div>
                                 <p className="text-sm font-medium text-gray-900">
-                                  Rs. {product.price}
+                                  NRS. {product.price}
                                 </p>
                               </div>
                             </div>

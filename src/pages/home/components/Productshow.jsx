@@ -46,7 +46,7 @@ const Card = ({ id, imageSrc, title, rating, price, addToCart }) => {
               onClick={() => addToCartt({ id, title, price, imageSrc })}
               className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
             >
-              Rent Now
+              Add to cart
             </button>
           </div>
         </div>
