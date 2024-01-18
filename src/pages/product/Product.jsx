@@ -20,9 +20,10 @@ import {
   selectCategories,
   
 } from "./productSlice";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Product = () => {
+  const navigate = useNavigate()
 
   const sortOptions = [
     { name: "Best Rating", sort: "price", order: "desc", current: true },
@@ -389,8 +390,8 @@ const Product = () => {
                       <div className="mx-auto max-w-2xl px-4  py-0 sm:px-6 sm:py-0 lg:max-w-7xl lg:px-8">
                         <div className=" grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
                           {products.map((product) => (
-                            <Link to="/productdetail">
-                            <div
+                            <div >
+                            <div  onClick={() =>  navigate(`/productdetail/${product.id}`)}
                               key={product.id}
                               className="group relative border-solid border-2 p-2 border-gray-200"
                             >
@@ -398,13 +399,14 @@ const Product = () => {
                                 <img
                                   src={product.thumbnail}
                                   alt={product.title}
+                                 
                                   className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                                 />
                               </div>
                               <div className="mt-4 flex justify-between">
                                 <div>
                                   <h3 className="text-sm font-semibold text-gray-700">
-                                    <a href={product.thumbnail}>
+                                    <a href="#">
                                       <span
                                         aria-hidden="true"
                                         className="absolute inset-0"
@@ -436,7 +438,7 @@ const Product = () => {
                                 </p>
                               </div>
                             </div>
-                            </Link>
+                           </div>
                           ))}
                         </div>
                       </div>

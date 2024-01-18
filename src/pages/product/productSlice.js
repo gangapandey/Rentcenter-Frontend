@@ -4,6 +4,7 @@ import {
   fetchProductsByFilters,
   fetchBrands,
   fetchCategories,
+  fetchProductByID,
 } from "./productAPI";
 
 const initialState = {
@@ -12,12 +13,22 @@ const initialState = {
   categories: [],
   selectedBrands: [],
   status: "idle",
+  selectedProduct : null //nachaley {} rakh
 };
 
 export const fetchAllProductsAsync = createAsyncThunk(
   "product/fetchAllProducts",
   async () => {
     const response = await fetchAllProducts();
+    return response.data;
+  }
+);
+
+//single productdetail
+export const fetchProductByIDAsync = createAsyncThunk(
+  "product/fetchProductByID",
+  async (id) => {
+    const response = await fetchProductByID(id);
     return response.data;
   }
 );
@@ -87,6 +98,14 @@ export const productSlice = createSlice({
         state.categories = action.payload;
       })
 
+      //for single productdetailpage
+      .addCase(fetchProductByIDAsync.pending, (state) => {
+        state.status = "loading";
+      })
+      .addCase(fetchProductByIDAsync.fulfilled, (state, action) => {
+        state.status = "idle";
+        state.selectedProduct = action.payload;
+      })
   },
 });
 
@@ -97,5 +116,8 @@ export const selectAllProducts = (state) => state.product.products;
 export const selectBrands = (state) => state.product.brands;
 
 export const selectCategories = (state) => state.product.categories;
+
+//single productdetail
+export const selectProductByID = (state) => state.product.selectedProduct;
 
 export default productSlice.reducer;

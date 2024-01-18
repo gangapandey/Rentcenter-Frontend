@@ -6,6 +6,18 @@ export function fetchAllProducts(){
         resolve({data})
     })
 }
+
+//single productdetail
+export function fetchProductByID(id){
+    return new Promise(async(resolve)=>{
+        //todo
+        const response = await fetch(`http://localhost:3000/products/${id}`)
+        const data = await response.json()
+        resolve({data})
+    })
+}
+
+
 export function fetchProductsByFilters(filter, sort){
     //filter = {"category" : "smartphones", "Laptops"}
     // sort ={_sort: "price", _order="desc"}
