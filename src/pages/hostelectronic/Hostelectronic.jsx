@@ -16,7 +16,7 @@ const initialValues = {
   date: "",
   time: "",
   gadgetimage: "",
-  billmage: ""
+  billimage: ""
 }
 
 const Hostelectronic = () => {
@@ -316,14 +316,14 @@ const Hostelectronic = () => {
                   for="image"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
-                  Gadget Image <span className="text-gray-600">(in pdf format)</span>
+                  Gadget Image <span className="text-gray-600"></span>
                 </label>
                 <input
                   type="file"
                   name="image"
                   multiple
                   id="image"
-                  accept=".pdf*"
+                  accept="image/*"
                   onChange={(event) => handleFileChange(event, "gadgetimage")}
                   class="w-full appearance-none rounded-md mb-3 border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                 /> {errors.gadgetimage && touched.gadgetimage ? (

@@ -370,7 +370,7 @@ const Hostvechicle = () => {
                   name="vimage"
                   id="vimage"
                   multiple
-                  accept=".pdf"
+                  accept="image/*"
                   onChange={(event) => handleFileChange(event, "vimage")}
                   className="w-full appearance-none rounded-md border mb-3 border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                 />
@@ -391,10 +391,22 @@ const Hostvechicle = () => {
                   type="file"
                   name="bimage"
                   id="bimage"
-                  accept=".pdf*"
+                  accept="image/*"
                   multiple
                   onChange={(event) => handleFileChange(event, "bimage")}
                   class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                />{" "}
+                {errors.bimage && touched.bimage ? (
+                  <p className="text-red-700 p-3">{errors.bimage}</p>
+                ) : null}
+                <input
+                  type="file"
+                  name="bimage"
+                  id="bimage"
+                  accept="image/*"
+                  multiple
+                  onChange={(event) => handleFileChange(event, "bimage")}
+                  class="w-full mt-2 appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                 />{" "}
                 {errors.bimage && touched.bimage ? (
                   <p className="text-red-700 p-3">{errors.bimage}</p>
@@ -413,7 +425,7 @@ const Hostvechicle = () => {
                   type="file"
                   name="inimage"
                   id="inimage"
-                  accept=".pdf"
+                  accept="image/*"
                   multiple
                   onChange={(event) => handleFileChange(event, "inimage")}
                   class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
