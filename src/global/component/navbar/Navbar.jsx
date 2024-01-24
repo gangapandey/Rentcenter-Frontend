@@ -80,10 +80,10 @@ console.log(products);
                       }}
                       className="block md:px-4 transition hover:text-blue-700"
                     >
-                      <span>Host Vechicle</span>
+                      <span>Host My Product</span>
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       href="#" onClick={() => {
                       
@@ -93,7 +93,7 @@ console.log(products);
                     >
                       <span>Host Electronic</span>
                     </a>
-                  </li>
+                  </li> */}
                   <a
                     href="#"
                     onClick={() => {
